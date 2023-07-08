@@ -15,9 +15,9 @@ const TaskDetails = ({ userId }) => {
   const socket = useRef();
 
   const { state } = useLocation();
-  const dateFormat=(date)=>{
-    return moment(date).format("DD-MM-YYYY h:mm:ss A")
-  }
+  const dateFormat = (date) => {
+    return moment(date).format("DD-MM-YYYY h:mm:ss A");
+  };
 
   useEffect(() => {
     const inputs = [
@@ -32,7 +32,7 @@ const TaskDetails = ({ userId }) => {
         inputs.push(["input", "start date", "start", "text"]);
       }
       if (data.status == "done") {
-        data.end = dateFormat(data.time.end);;
+        data.end = dateFormat(data.time.end);
         inputs.push(["input", "end date", "end", "text"]);
       }
     }
@@ -42,7 +42,7 @@ const TaskDetails = ({ userId }) => {
   const getTasks = async () => {
     let url = `?filter[_id]=${state}`;
     let { tasks } = await taskApi("GET", url);
-    tasks[0].createdAt=dateFormat(tasks[0].createdAt)
+    tasks[0].createdAt = dateFormat(tasks[0].createdAt);
     setData(tasks[0]);
     setLoading(false);
   };
