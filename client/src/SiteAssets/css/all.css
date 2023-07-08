@@ -1,0 +1,12 @@
+@import url(vendors/bootstrap.min.css);
+@import url(vendors/Chart.min.css);
+@import url(vendors/line-awesome.min.css);
+@import url(pages/dashboard.css);
+@import url(pages/details.css);
+@import url(pages/layout.css);
+@import url(pages/patients.css);
+@import url(pages/settings.css);
+@import url(pages/loading.css);
+@import url(pages/login.css);
+@import url(pages/notFound.css);
+@import url(pages/timer.css);

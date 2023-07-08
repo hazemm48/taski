@@ -1,0 +1,43 @@
+/* general styling */
+:root {
+  --smaller: .75;
+}
+
+.timer {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timer h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+.timer li {
+  display: inline-block;
+  font-size: 0.8em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.timer li span {
+  display: block;
+  font-size: 2.8rem;
+}
+
+@media all and (max-width: 768px) {
+  .timer   h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  .timer li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .timer li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}

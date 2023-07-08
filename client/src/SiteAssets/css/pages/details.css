@@ -1,0 +1,486 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+i {
+  font-size: 1em;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+label {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.label-md {
+  padding: 0.5em;
+}
+
+.label-sm {
+  padding: 0.1em 1em;
+}
+
+.label-green {
+  background-color: rgba(40, 217, 255, 0.1);
+  color: var(--green);
+}
+
+.label-green-bl {
+  background-color: rgba(40, 217, 255, 0.1);
+  color: var(--green);
+  border-left: 3px solid var(--green);
+}
+.label-yellow {
+  background-color: rgba(255, 230, 40, 0.226);
+  color: #be8f00;
+}
+
+.label-orange {
+  background-color: rgba(255, 171, 56, 0.1);
+  color: var(--orange);
+}
+
+.label-orange-bl {
+  background-color: rgba(255, 171, 56, 0.1);
+  color: var(--orange);
+  border-left: 3px solid var(--orange);
+}
+.label-red {
+  background-color: rgba(255, 171, 56, 0.1);
+  color: var(--red);
+}
+
+.label-red-bl {
+  background-color: rgba(255, 171, 56, 0.1);
+  color: var(--red);
+  border-left: 3px solid var(--orange);
+}
+
+.label-blue {
+  background-color: rgba(71, 139, 229, 0.1);
+  color: var(--blue);
+}
+
+.label-blue-bl {
+  background-color: rgba(71, 139, 229, 0.1);
+  color: var(--blue);
+  border-left: 3px solid var(--blue);
+}
+
+.label-pink {
+  background-color: rgba(250, 84, 84, 0.1);
+  color: var(--pink);
+}
+
+.label-pink-bl {
+  background-color: rgba(250, 84, 84, 0.1);
+  color: var(--pink);
+  border-left: 3px solid var(--pink);
+}
+
+.label-grey {
+  background-color: #d8d8d8;
+  color: #333333;
+}
+
+.label-grey-bl {
+  background-color: #d8d8d8;
+  color: #333333;
+  border-left: 3px solid #333333;
+}
+
+.label-cream {
+  background-color: rgba(250, 235, 215, 0.7);
+  color: #333333;
+}
+
+.title-section {
+  vertical-align: center;
+  padding: 0;
+  /* border-bottom: 1px solid #d8d8d8; */
+}
+.title-section > .col-md-8,
+.title-section > .col-md-4 {
+  padding: 0;
+  text-align: right;
+}
+.title-section nav {
+  padding: 0;
+}
+.title-section .breadcrumb {
+  margin: 0;
+  background-color: transparent;
+}
+.title-section .breadcrumb .breadcrumb-item {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.title-section .breadcrumb .breadcrumb-item a {
+  color: #0466c8;
+}
+.title-section .breadcrumb .breadcrumb-item a:hover,
+.title-section .breadcrumb .breadcrumb-item a:focus {
+  text-decoration: none;
+}
+.title-section button {
+  margin-top: 0.35em;
+}
+
+.patient-details-section .patients-details-card-wrapper {
+  border-left: 0.05em solid #cccccc;
+  padding-top: 2em;
+}
+.patient-details-section .res {
+  border-top: 0.05em solid #cccccc;
+  padding-top: 2em;
+}
+.patient-details-section .card {
+  margin-bottom: 1.5em;
+}
+.patient-details-section .mini-card .card-header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+}
+
+.patient-details-section .mini-card .card-body h4,
+.patient-details-section .mini-card .card-body h5,
+.patient-details-section .mini-card .card-body small,
+.patient-details-section .mini-card .card-body p {
+  padding: 0 0 0.25em 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+.patient-details-section .mini-card .card-body h3 {
+  text-transform: capitalize;
+  color: #0466c8;
+}
+.patient-details-section .mini-card .card-body input {
+  border-radius: 0.4em;
+  text-transform: capitalize;
+  height: 3em;
+}
+
+.patient-details-section .mini-card .card-body .row .col-md-4 .form-group label,
+.patient-details-section
+  .mini-card
+  .card-body
+  .row
+  .col-md-12
+  .form-group
+  label {
+  color: #0466c8;
+}
+.patient-details-section .mini-card .card-footer button {
+  width: 100%;
+}
+.patient-details-section .nav,
+.patient-details-section .nav-tabs {
+  border-bottom: 1px solid #cccccc;
+}
+.patient-details-section .nav li a,
+.patient-details-section .nav li .nav-link,
+.patient-details-section .nav .nav-item a,
+.patient-details-section .nav .nav-item .nav-link,
+.patient-details-section .nav-tabs li a,
+.patient-details-section .nav-tabs li .nav-link,
+.patient-details-section .nav-tabs .nav-item a,
+.patient-details-section .nav-tabs .nav-item .nav-link {
+  border: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333333;
+  border-radius: 0;
+}
+.patient-details-section .nav li .active,
+.patient-details-section .nav .nav-item .active,
+.patient-details-section .nav-tabs li .active,
+.patient-details-section .nav-tabs .nav-item .active {
+  background-color: white;
+  color: #0466c8;
+  border-bottom: 2px solid #0466c8;
+}
+.patient-details-section .tab-content {
+  background-color: #f9f9f9;
+}
+.patient-details-section .tab-content .tab-pane {
+  margin-top: 1em;
+}
+.patient-details-section .tab-content .tab-pane .section-title {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 1em;
+  text-align: right;
+}
+.patient-details-section .tab-content .tab-pane .media {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0.5em 1em;
+}
+.patient-details-section .tab-content .tab-pane .media .align-self-center {
+  border-right: 1.5px solid #d8d8d8;
+  padding: 1em;
+  margin-right: 1em;
+}
+.patient-details-section .tab-content .tab-pane .media .align-self-center p,
+.patient-details-section .tab-content .tab-pane .media .align-self-center h3 {
+  margin: 0;
+  text-align: right;
+  text-transform: capitalize;
+  color: #333333;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row {
+  margin: 0 0.5em;
+  padding: 0.5em 0;
+}
+.patient-details-section
+  .tab-content
+  .tab-pane
+  .media
+  .media-body
+  .row
+  label:not(.label-sm),
+.patient-details-section .tab-content .tab-pane .media .media-body .row p {
+  width: 19%;
+  font-weight: 500;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row label,
+.patient-details-section .tab-content .tab-pane .media .media-body .row p {
+  font-size: 0.85em;
+  padding-left: 0.5em;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row label {
+  height: 40px;
+}
+.patient-details-section
+  .tab-content
+  .tab-pane
+  .media
+  .media-body
+  .row
+  label:nth-of-type(1) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 0.75em;
+}
+.patient-details-section
+  .tab-content
+  .tab-pane
+  .media
+  .media-body
+  .row
+  label:nth-of-type(2) {
+  border-radius: 5px;
+}
+.patient-details-section
+  .tab-content
+  .tab-pane
+  .media
+  .media-body
+  .row
+  label
+  i {
+  margin-right: 0.5em;
+}
+.patient-details-section
+  .tab-content
+  .tab-pane
+  .media
+  .media-body
+  .row
+  .label-sm {
+  text-align: center;
+  padding-top: 0.75em;
+  font-weight: 500;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row .btn {
+  padding: 0.25em;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row a {
+  width: 5%;
+  text-align: center;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row p,
+.patient-details-section .tab-content .tab-pane .media .media-body .row a {
+  padding-top: 0.5em;
+  color: #666666;
+  text-align: center;
+  margin: 0;
+}
+.patient-details-section .tab-content .tab-pane .media .media-body .row p i,
+.patient-details-section .tab-content .tab-pane .media .media-body .row a i {
+  vertical-align: center;
+  margin-right: 0.5em;
+  font-size: 1em;
+}
+.patient-details-section .files-card .card-header h5 button,
+.patient-details-section .notes-card .card-header h5 button {
+  float: right;
+}
+.patient-details-section .files-card .card-body,
+.patient-details-section .notes-card .card-body {
+  margin: 1em 0;
+}
+.patient-details-section .notes-card .card-body {
+  background-color: #f9f9f9;
+  padding: 0.5em;
+}
+.patient-details-section .notes-card .card-body textarea,
+.patient-details-section .notes-card .card-body .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1em;
+}
+.patient-details-section .notes-card .card-footer {
+  text-transform: capitalize;
+}
+.patient-details-section .notes-card .card-footer .float-left i {
+  color: #a8001f;
+  margin-right: 0.5em;
+}
+.files-card .card-body .list-group .list-group-item {
+  padding: 1em 0.5em;
+  text-transform: capitalize;
+  color: #333333;
+  border: 1px solid #d8d8d8;
+  margin: 0.25em 0;
+}
+.files-card .card-body .list-group .list-group-item .float-right small,
+.files-card .card-body .list-group .list-group-item .float-right .text-muted {
+  text-transform: uppercase;
+}
+.files-card .card-body .list-group .list-group-item:hover,
+.files-card .card-body .list-group .list-group-item:focus {
+  text-decoration: none;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: all ease-in-out 150ms;
+}
+.files-card .card-body .list-group .list-group-item:hover small,
+.files-card .card-body .list-group .list-group-item:hover .text-muted,
+.files-card .card-body .list-group .list-group-item:focus small,
+.files-card .card-body .list-group .list-group-item:focus .text-muted {
+  display: none;
+}
+.files-card .card-body .list-group .list-group-item:hover .action-buttons,
+.files-card .card-body .list-group .list-group-item:focus .action-buttons {
+  display: block;
+  transition: all ease-in-out 150ms;
+}
+.files-card
+  .card-body
+  .list-group
+  .list-group-item:hover
+  .action-buttons
+  button,
+.files-card
+  .card-body
+  .list-group
+  .list-group-item:focus
+  .action-buttons
+  button {
+  padding: 0.25em;
+  text-align: center;
+  margin-right: 0.2em;
+}
+.files-card
+  .card-body
+  .list-group
+  .list-group-item:hover
+  .action-buttons
+  button
+  i,
+.files-card
+  .card-body
+  .list-group
+  .list-group-item:focus
+  .action-buttons
+  button
+  i {
+  vertical-align: bottom;
+  text-align: right;
+  margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title-section .col-md-8,
+  .title-section .col-md-4 {
+    width: 50%;
+    padding: 0;
+  }
+  .title-section .col-md-8 .breadcrumb .breadcrumb-item {
+    padding-left: 0;
+  }
+  .title-section .col-md-4 {
+    text-align: right;
+  }
+  .title-section .col-md-4 button {
+    margin-bottom: 0.5em;
+  }
+
+  .patient-details-section .patients-details-card-wrapper {
+    border: none;
+  }
+  .patient-details-section .mini-card {
+    margin-bottom: 1em;
+  }
+  .patient-details-section .nav,
+  .patient-details-section .nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+  .patient-details-section .nav li,
+  .patient-details-section .nav .nav-item,
+  .patient-details-section .nav-tabs li,
+  .patient-details-section .nav-tabs .nav-item {
+    list-style-type: none;
+  }
+  .patient-details-section .tab-content .tab-pane .section-title {
+    text-align: center;
+  }
+  .patient-details-section .tab-content .tab-pane .media {
+    padding: 0;
+    display: block;
+    flex-wrap: nowrap;
+    align-items: normal;
+  }
+  .patient-details-section .tab-content .tab-pane .media .align-self-center,
+  .patient-details-section .tab-content .tab-pane .media .media-body {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .patient-details-section .tab-content .tab-pane .media .align-self-center {
+    border-right: 0;
+  }
+  .patient-details-section .tab-content .tab-pane .media .align-self-center h3,
+  .patient-details-section .tab-content .tab-pane .media .align-self-center p {
+    text-align: center;
+  }
+  .patient-details-section .tab-content .tab-pane .media .media-body .row {
+    display: block;
+    margin: 0;
+  }
+  .patient-details-section .tab-content .tab-pane .media .media-body .row label,
+  .patient-details-section .tab-content .tab-pane .media .media-body .row p,
+  .patient-details-section .tab-content .tab-pane .media .media-body .row i {
+    width: 100% !important;
+    height: 100%;
+    padding: 0.5em;
+    text-align: center;
+  }
+  .patient-details-section
+    .files-card
+    .list-group
+    .list-group-item
+    .float-right {
+    float: none !important;
+  }
+}
+
+/*# sourceMappingURL=details.css.map */

@@ -1,0 +1,78 @@
+.section .card {
+  margin-bottom: 1.5em;
+}
+/* .section .card .card-header {
+  padding: 1em 1em 0 1em;
+} */
+.section .card .card-header p {
+  margin: 0;
+}
+.section .card .card-body img {
+  width: 10em;
+  /* height: 10em; */
+  object-fit: cover;
+}
+.patHomeImg{
+  width: 6em !important;
+  height: 6em !important;
+  object-fit: cover;
+}
+.section .card .card-body p {
+  margin: 0;
+}
+.section .card .card-body label {
+  text-transform: capitalize;
+}
+.section .card .card-body .sub-section {
+  padding: 1em;
+}
+.section .card .card-body .sub-section .sub-section-title h6 {
+  text-transform: uppercase;
+  color: #666666;
+}
+.section .card .card-body .sub-section .sub-section-body {
+  padding: 1em 0;
+}
+.section .card .card-body .sub-section .sub-section-body .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #a8001f;
+  border-color: #a8001f;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-2 img {
+    width: 70%;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-6 .d-flex {
+    display: block !important;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-6 .d-flex button {
+    width: 100%;
+    margin-bottom: 0.75em;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-6 .d-flex .ml-2 {
+    margin-left: 0 !important;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-2 {
+    text-align: center;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-2 img {
+    width: 80%;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-6 .d-flex {
+    margin-top: 2em;
+    margin-bottom: 0 !important;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-lg-6 .d-flex button {
+    width: 100%;
+    margin-bottom: 0.75em;
+  }
+}
+
+/*# sourceMappingURL=settings.css.map */
