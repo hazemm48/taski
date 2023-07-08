@@ -15,7 +15,7 @@ const signUp = catchAsyncError(async (req, res, next) => {
   } else {
     let hashedPass = bcrypt.hashSync(all.password, Number(process.env.ROUNDS));
     all.password = hashedPass;
-    sendMAil({ email: all.email, operation: "verify" });
+    await sendMAil({ email: all.email, operation: "verify" });
     let added = await userModel.insertMany(all);
     res.status(200).json({ message: "user added", added });
   }

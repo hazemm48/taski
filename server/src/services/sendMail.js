@@ -19,14 +19,14 @@ const sendMAil = async (options) => {
 
   if (options.operation == "reset") {
     let info = await transporter.sendMail({
-      from: '"HOSPI" <hospi.sim@gmail.com>',
+      from: '"TASKI" <hospi.sim@gmail.com>',
       to: options.email,
       subject: "Reset Password",
       html: resetHtml(options.code),
     });
   } else if (options.operation == "verify") {
     let info = await transporter.sendMail({
-      from: '"HOSPI" <hospi.sim@gmail.com>',
+      from: '"TASKI" <hospi.sim@gmail.com>',
       to: options.email,
       subject: "Verify Your Email",
       html: emailHtml(emailToken),
