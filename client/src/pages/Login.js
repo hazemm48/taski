@@ -98,7 +98,6 @@ const Login = () => {
                     type="text"
                     placeholder="E-mail"
                     required
-                    defaultValue="hazem@haha.com"
                   />
                 </div>
                 <div className="input-field">
@@ -108,7 +107,6 @@ const Login = () => {
                     type="password"
                     placeholder="Password"
                     required
-                    defaultValue="1234"
                   />
                 </div>
                 <div className="form-check" style={{ color: "white" }}>
