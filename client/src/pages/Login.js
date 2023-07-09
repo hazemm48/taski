@@ -21,12 +21,15 @@ const Login = () => {
     }
   }, []);
 
-  const signIn = async (obj) => {
+  const signIn = async () => {
     let formEl = document.forms.signInForm;
     let formData = new FormData(formEl);
+    let rememberMe = formData.get("rememberMe");
+    rememberMe == "on" ? (rememberMe = true) : (rememberMe = false);
     let body = {
-      email: obj ? obj.email : formData.get("emaill").toLowerCase(),
-      password: obj ? obj.password : formData.get("passwordd"),
+      email: formData.get("emaill").toLowerCase(),
+      password: formData.get("passwordd"),
+      rememberMe,
     };
     let data = await login(body);
     if (data.message == "welcome") {
@@ -40,11 +43,12 @@ const Login = () => {
       navigate("/home");
     } else {
       alert(data.message);
-      setLoading(false);
     }
+    setLoading(false);
   };
 
   const signUp = async (data) => {
+    setLoading(true)
     let body = {
       ...data,
     };
@@ -54,7 +58,7 @@ const Login = () => {
         "A confirmation message have been sent to your email, please confirm your email first"
       );
       window.location.reload();
-    } else if ((message = "already registered")) {
+    } else if (message == "already registered") {
       alert(message);
       setLoading(false);
     } else {
@@ -106,6 +110,10 @@ const Login = () => {
                     required
                     defaultValue="1234"
                   />
+                </div>
+                <div className="form-check" style={{ color: "white" }}>
+                  <input name="rememberMe" type="checkbox" required />
+                  remember me
                 </div>
                 <input
                   type="button"
