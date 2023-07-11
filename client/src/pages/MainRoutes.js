@@ -57,7 +57,11 @@ const MainRoutes = () => {
                   }
                 />
                 <Route exact path="/addTask" element={<AddTask />} />
-                <Route exact path="/taskDetails" element={<TaskDetails userId={userDet._id}/>} />
+                <Route
+                  exact
+                  path="/taskDetails"
+                  element={<TaskDetails userId={userDet._id} />}
+                />
                 <Route
                   exact
                   path="/settings"

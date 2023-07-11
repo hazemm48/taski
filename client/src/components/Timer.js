@@ -1,7 +1,13 @@
 import moment from "moment";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 
-const Timer = ({ data, connected, stopConnection, startConnection, startTask }) => {
+const Timer = ({
+  data,
+  connected,
+  stopConnection,
+  startConnection,
+  startTask,
+}) => {
   const [day, setDay] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -60,14 +66,14 @@ const Timer = ({ data, connected, stopConnection, startConnection, startTask }) 
       {data.status != "done" && (
         <button
           id="editPat"
-          style={{width:"100%"}}
+          style={{ width: "100%" }}
           className={`btn btn${connected ? "" : "-dark"}-red-f-gr`}
           onClick={() => {
             if (connected) {
               stopConnection();
             } else {
               if (data.status == "pending") {
-                startTask('start');
+                startTask("start");
               } else if (data.status == "in progress") {
                 startConnection();
               }

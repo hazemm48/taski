@@ -53,8 +53,14 @@ const TaskDetails = ({ userId }) => {
         "YYYY/MM/DD HH:mm:ss"
       )}`,
     });
-    setConnected(true);
-    socket.current = socketIo;
+    socketIo.on("tracking", (msg) => {
+      if (msg == "true") {
+        alert("can't track more than one task at the same time");
+      } else {
+        setConnected(true);
+        socket.current = socketIo;
+      }
+    });
   };
 
   const stopConnection = () => {
@@ -82,6 +88,7 @@ const TaskDetails = ({ userId }) => {
 
   useEffect(() => {
     return () => {
+      console.log(connected);
       if (socket.current?.connected) {
         stopConnection();
       }
