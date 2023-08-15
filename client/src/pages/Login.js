@@ -31,7 +31,9 @@ const Login = () => {
       password: formData.get('passwordd'),
       rememberMe,
     };
+    console.log(body);
     let data = await login(body);
+    console.log(data);
     if (data.message == 'welcome') {
       localStorage.setItem(
         'token',
@@ -107,9 +109,8 @@ const Login = () => {
                     name="passwordd"
                     type="password"
                     placeholder="Password"
-                    defaultValue="1234"
+                    defaultValue="123456"
                     required
-                    
                   />
                 </div>
                 <div className="form-check" style={{ color: 'white' }}>
