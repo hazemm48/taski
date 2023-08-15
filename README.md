@@ -8,7 +8,7 @@ It is a task management system with time tracking to help users monitor their pr
 
 ## Used Technologies & Tools
 
-Node.js, Express.js, MongoDB, React.js, RESTful APIs, ES6, socket.io, JWT, JOI Validation, Nodemailer
+HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, React.js, RESTful APIs, ES6, socket.io, JWT, JOI Validation, Nodemailer
 
 ## How to Load the App
 client:
