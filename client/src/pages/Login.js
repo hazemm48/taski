@@ -1,10 +1,10 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "react-datepicker/dist/react-datepicker.css";
-import LoadingSpinner from "../components/Loading.js";
-import { login, signUpApi } from "../APIs.js";
-import { useForm } from "react-hook-form";
-import { validate } from "../validation/FormValidate.js";
+import React, { useEffect, useLayoutEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import 'react-datepicker/dist/react-datepicker.css';
+import LoadingSpinner from '../components/Loading.js';
+import { login, signUpApi } from '../APIs.js';
+import { useForm } from 'react-hook-form';
+import { validate } from '../validation/FormValidate.js';
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
@@ -17,30 +17,30 @@ const Login = () => {
 
   useEffect(() => {
     if (localStorage.token) {
-      navigate("/home");
+      navigate('/home');
     }
   }, []);
 
   const signIn = async () => {
     let formEl = document.forms.signInForm;
     let formData = new FormData(formEl);
-    let rememberMe = formData.get("rememberMe");
-    rememberMe == "on" ? (rememberMe = true) : (rememberMe = false);
+    let rememberMe = formData.get('rememberMe');
+    rememberMe == 'on' ? (rememberMe = true) : (rememberMe = false);
     let body = {
-      email: formData.get("emaill").toLowerCase(),
-      password: formData.get("passwordd"),
+      email: formData.get('emaill').toLowerCase(),
+      password: formData.get('passwordd'),
       rememberMe,
     };
     let data = await login(body);
-    if (data.message == "welcome") {
+    if (data.message == 'welcome') {
       localStorage.setItem(
-        "token",
+        'token',
         JSON.stringify({
           key: data.token,
           expiry: data.expiry,
         })
       );
-      navigate("/home");
+      navigate('/home');
     } else {
       alert(data.message);
     }
@@ -48,36 +48,36 @@ const Login = () => {
   };
 
   const signUp = async (data) => {
-    setLoading(true)
+    setLoading(true);
     let body = {
       ...data,
     };
     let { message } = await signUpApi(body);
-    if (message == "user added") {
+    if (message == 'user added') {
       alert(
-        "A confirmation message have been sent to your email, please confirm your email first"
+        'A confirmation message have been sent to your email, please confirm your email first'
       );
       window.location.reload();
-    } else if (message == "already registered") {
+    } else if (message == 'already registered') {
       alert(message);
       setLoading(false);
     } else {
-      alert("Something went wrong, Please try again later");
+      alert('Something went wrong, Please try again later');
       setLoading(false);
     }
   };
 
   useLayoutEffect(() => {
-    const sign_in_btn = document.querySelector("#sign-in-btn");
-    const sign_up_btn = document.querySelector("#sign-up-btn");
-    const container = document.querySelector(".login");
+    const sign_in_btn = document.querySelector('#sign-in-btn');
+    const sign_up_btn = document.querySelector('#sign-up-btn');
+    const container = document.querySelector('.login');
 
-    sign_up_btn.addEventListener("click", () => {
-      container.classList.add("sign-up-mode");
+    sign_up_btn.addEventListener('click', () => {
+      container.classList.add('sign-up-mode');
     });
 
-    sign_in_btn.addEventListener("click", () => {
-      container.classList.remove("sign-up-mode");
+    sign_in_btn.addEventListener('click', () => {
+      container.classList.remove('sign-up-mode');
     });
   }, []);
 
@@ -97,6 +97,7 @@ const Login = () => {
                     name="emaill"
                     type="text"
                     placeholder="E-mail"
+                    defaultValue="hazem@haha.com"
                     required
                   />
                 </div>
@@ -106,16 +107,18 @@ const Login = () => {
                     name="passwordd"
                     type="password"
                     placeholder="Password"
+                    defaultValue="1234"
                     required
                   />
                 </div>
-                <div className="form-check" style={{ color: "white" }}>
+                <div className="form-check" style={{ color: 'white' }}>
                   <input name="rememberMe" type="checkbox" required />
                   remember me
                 </div>
                 <input
                   type="button"
                   onClick={() => {
+                    setLoading(true)
                     signIn();
                   }}
                   defaultValue="Login"
@@ -137,7 +140,7 @@ const Login = () => {
                     name="name"
                     type="text"
                     placeholder="Your Full Name"
-                    {...register("name", validate("name"))}
+                    {...register('name', validate('name'))}
                   />
                   {errors.name && (
                     <>
@@ -154,7 +157,7 @@ const Login = () => {
                     name="email"
                     type="email"
                     placeholder="Email"
-                    {...register("email", validate("email"))}
+                    {...register('email', validate('email'))}
                   />
                   {errors.email && (
                     <>
@@ -171,7 +174,7 @@ const Login = () => {
                     name="password"
                     type="password"
                     placeholder="Password"
-                    {...register("password", validate("password"))}
+                    {...register('password', validate('password'))}
                   />
                   {errors.password && (
                     <>
