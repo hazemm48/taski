@@ -109,6 +109,7 @@ const Login = () => {
                     placeholder="Password"
                     defaultValue="1234"
                     required
+                    
                   />
                 </div>
                 <div className="form-check" style={{ color: 'white' }}>
